@@ -11,7 +11,7 @@ class ProductController extends Controller
 					"name" => "TV",
 					"description" => "Best TV",
 					"image" => "game.png",
-					"price" =>"$1000"
+					"price" =>"$1500"
 					],
 				1 => [
 					"name" => "iPhone",

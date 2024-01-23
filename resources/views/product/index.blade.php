@@ -5,7 +5,7 @@
 	@foreach ($products as $product)
 			<div>
 				<img src="{{asset("img/{$product["image"]}")}}" alt="{{$product["name"]}}">
-				<a href="{{route("product.show",array_search($product,$products))}}">{{$product["name"]}}</a>
+				<a href="{{route("product.show",$loop->index)}}">{{$product["name"]}}</a>
 			</div>
 	@endforeach
 @endsection
