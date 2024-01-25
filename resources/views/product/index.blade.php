@@ -4,8 +4,8 @@
 @section("content")
 	@foreach ($products as $product)
 			<div>
-				<img src="{{asset("img/{$product["image"]}")}}" alt="{{$product["name"]}}">
-				<a href="{{route("product.show",$loop->index)}}">{{$product["name"]}}</a>
+				<img src="{{asset("img/$product->image")}}" alt="{{$product->name}}">
+				<a href="{{route("product.show",$product->id)}}">{{$product->name}}</a>
 			</div>
 	@endforeach
 @endsection
